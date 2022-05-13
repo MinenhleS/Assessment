@@ -7,4 +7,5 @@
 - Build an image (docker build . )
 - Checked the image for image id so that i can use it to run docker (docker image ls)
 - Then run docker (docker run <image id>)
+- Finally i created a repo, add and commit my changes then push them.
   
