@@ -2,8 +2,9 @@ FROM python
 
 RUN pip3 install requests
 WORKDIR "/app"
-COPY question3.py .
-ENV site=http://api.open-notify.org/astros.json
+COPY reqtotaltime.py .
+ENV site=http://www.google.com
 ENV times=5
 
-CMD ["python3", "question3.py"]
+RUN pip install beautifulsoup4
+CMD ["python3", "reqtotaltime.py"]
